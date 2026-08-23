@@ -2,7 +2,7 @@
   "name": "all-the.rest",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@11.21.0",
+  "packageManager": "pnpm@11.23.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
@@ -12,12 +12,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "astro": "^7.1.4"
+    "astro": "^7.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "daisyui": "^5.5.19",
-    "tailwindcss": "^4.2.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "daisyui": "^5.7.21",
+    "tailwindcss": "^4.3.3",
     "typescript": "5.9.3"
   }
 }
