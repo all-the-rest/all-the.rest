@@ -1,3 +1,7 @@
+# Dependabot version updates.
+# Auto-Merge-Logik: .github/workflows/automerge.yml
+#   - minor+patch (einzeln oder als Gruppe "minor-and-patch") -> Auto-Merge nach gruener CI
+#   - major und docker -> bewusst NICHT auto-gemergt
 version: 2
 updates:
   - package-ecosystem: npm
