@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Build-Verifikation für Dependabot-/Feature-PRs (Deploy-Schritte sind
+  # unten via `github.event_name != 'pull_request'` geguarded)
+  pull_request:
 
 permissions:
   contents: read
@@ -26,11 +29,14 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - uses: actions/upload-pages-artifact@v5
+        # Pages-Artifact nur für echte Deploys, nicht auf PRs
+        if: github.event_name != 'pull_request'
         with:
           path: dist
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
