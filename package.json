@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "astro": "^7.3.2"
+    "astro": "^7.3.3"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
-    "daisyui": "^5.7.37",
+    "daisyui": "^5.7.42",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.3"
   }
